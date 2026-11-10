@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Multi-Operation Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Calculator</h1>
+        <p>Perform different mathematical operations</p>
+
+        <input type="number" id="num1" placeholder="Enter first number" step="any">
+        <input type="number" id="num2" placeholder="Enter second number" step="any">
+
+        <div class="buttons">
+            <button data-operation="add">+</button>
+            <button data-operation="subtract">-</button>
+            <button data-operation="multiply"> ×</button>
+            <button data-operation="division">÷ </button>
+            <button data-operation="prime">Prime Check</button>
+            <button data-operation="evenOdd">Even / Odd</button>
+            <button data-operation="factorial">!</button>
+            <button data-operation="largest">Largest</button>
+            <button data-operation="positiveNegative">Positive / Negative</button>
+            <button data-operation="square" title="Square">x&sup2;</button>
+            <button data-operation="cube" title="Cube">x&sup3;</button>
+        </div>
+
+        <div class="result-box">
+            <h3>Result</h3>
+            <p id="result" aria-live="polite">Your result will appear here</p>
+        </div>
+    </div>
+</body>
+</html>
